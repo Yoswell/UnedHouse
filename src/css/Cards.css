@@ -1,0 +1,107 @@
+.terminal-card {
+    display: grid;
+    border-radius: var(--r-10);
+    background-color: var(--bg-cl3);
+    padding: 3px;
+    position: relative;
+
+    button {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: var(--g-5);
+        top: 10px;
+        right: 10px;
+        border: none;
+        font-size: 12px;
+        background-color: transparent;
+        cursor: pointer;
+
+        svg {
+            color: var(--fg-cl1);
+            width: 15px;
+        }
+    }
+
+    /*https://ryanmulligan.dev/blog/pixel-canvas/*/
+
+    pre {   
+        overflow: hidden;
+        code {
+            border-radius: var(--r-8);
+            background-color: var(--bg-cl2);
+            font-size: clamp(11px, 2vw, 14px);
+            padding: var(--p-20) !important;
+            font-family: "Consolas", sans-serif;
+            font-family: "JetBrains Mono", monospace;
+            scrollbar-width: none;
+
+            span {
+                font-family: inherit;
+                font-size: inherit;
+            }
+        }
+    }
+}
+
+.scroll-main .container {
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 15px;
+        width: 1px;
+        height: 120%;
+        background-color: var(--br-cl3);
+    }
+}
+
+.float-number{
+    position: absolute;
+    display: grid;
+    place-content: center;
+    top: 0;
+    left: 0;
+    color: var(--fg-cl1);
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: var(--bg-cl3);
+    border-radius: 50%;
+    border: 1px solid var(--br-cl3);
+}
+
+/*******************************************/
+/*******************************************/
+
+.title-devide {
+    width: 100%;
+    display: grid;
+    gap: var(--g-15);
+
+    h6 { display: none; }
+
+    h1 {
+        font-size: clamp(20px, 2vw, 23px);
+        color: var(--fg-cl1);
+    }
+
+    p { 
+        color: var(--fg-cl2); 
+        font-size: clamp(14px, 2vw, 16px);
+
+        span { 
+            color: var(--fg-cl1); 
+            font-weight: 600;
+            border-radius: var(--r-6);
+            font-style: italic;
+        }
+    }
+}
+
+/*******************************************/
+/*******************************************/
