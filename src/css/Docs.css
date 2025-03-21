@@ -29,7 +29,8 @@
             white-space: nowrap;
             font-weight: 500;
             padding-left: var(--p-20);
-            
+            font-size: clamp(14px, 2vw, 15px);
+
             a {
                 overflow: hidden;
                 white-space: nowrap;
@@ -37,6 +38,7 @@
                 color: inherit;
                 font-size: inherit;
                 max-width: 80%;
+                font-size: clamp(14px, 2vw, 15px);
             }
             
             &:hover { opacity: 0.5; }

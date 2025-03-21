@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --cl1: #ffb23f;
@@ -63,27 +61,13 @@
 }
 
 @font-face {
-    font-family: "Red Hat Display";
-    src: url('/src/assets/font/RedHatDisplay-Medium.woff2') format(woff2);
+    font-family: "Noto Sans";
+    src: url('/src/assets/fonts/Noto-Sans-regular.woff2') format(woff2);
     font-weight: 500;
 }
 
-@font-face {
-    font-family: "Red Hat Display";
-    src: url('/src/assets/font/RedHatDisplay-SemiBold.woff2') format(woff2);
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Red Hat Display";
-    src: url('/src/assets/font/RedHatDisplay-Bold.woff2') format(woff2);
-    font-weight: 900;
-}
-
 * {
-    font-family: "Red Hat Display", sans-serif;
-    font-family: "Delius", sans-serif;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans";
     box-sizing: border-box;
     padding: 0;
     margin: 0;
