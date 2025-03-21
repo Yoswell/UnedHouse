@@ -2,80 +2,80 @@ import { TitleType } from "@/types/type"
 
 export const TitlesLogicLeft: TitleType[] = [
     {
-        title: "Introduction to PSeInt",
-        description: "<span>PSeInt</span> is a tool designed to help students understand computational logic without the complexity of specific programming language syntax. It uses a <span>pseudocode representation</span>, which is a simple and structured way to describe algorithms clearly. By learning to write pseudocode, students can develop an <span>algorithmic mindset</span>, which serves as a strong foundation for later learning more technical programming languages and tackling real-world coding problems."
+        title: "Introducción a PSeInt",
+        description: "<span>PSeInt</span> es una herramienta diseñada para ayudar a los estudiantes a comprender la lógica computacional sin la complejidad de la sintaxis de un lenguaje de programación específico. Utiliza una <span>representación de pseudocódigo</span>, que es una forma simple y estructurada de describir algoritmos de manera clara. Al aprender a escribir pseudocódigo, los estudiantes pueden desarrollar una <span>mentalidad algorítmica</span>, que sirve como una base sólida para aprender posteriormente lenguajes de programación más técnicos y abordar problemas de codificación del mundo real."
     },
     {
-        title: "Control Structures",
-        description: "<span>Control structures</span> are fundamental building blocks of any program, as they manage the flow of execution. These structures allow for decision-making and repetition within a program. The main types include conditionals, which execute actions based on evaluated conditions; loops, which repeat actions until a condition is met or a set number of times; and selectors, which choose actions from multiple options based on the evaluation of an expression."
+        title: "Estructuras de Control",
+        description: "Las <span>estructuras de control</span> son bloques fundamentales de cualquier programa, ya que gestionan el flujo de ejecución. Estas estructuras permiten la toma de decisiones y la repetición dentro de un programa. Los principales tipos incluyen condicionales, que ejecutan acciones basadas en condiciones evaluadas; bucles, que repiten acciones hasta que se cumple una condición o un número determinado de veces; y selectores, que eligen acciones entre múltiples opciones basadas en la evaluación de una expresión."
     },
     {
-        title: "Arrays in PSeInt",
-        description: "<span>Arrays</span> are a way to store multiple values in a single, organized structure, which simplifies data management and manipulation. Instead of creating multiple variables for each piece of data, arrays allow you to manage lists efficiently. In <span>PSeInt</span>, arrays are declared with a specified size and data type, making them powerful tools for managing large sets of data or performing operations on multiple values simultaneously."
+        title: "Arreglos en PSeInt",
+        description: "Los <span>arreglos</span> son una forma de almacenar múltiples valores en una sola estructura organizada, lo que simplifica la gestión y manipulación de datos. En lugar de crear múltiples variables para cada dato, los arreglos permiten gestionar listas de manera eficiente. En <span>PSeInt</span>, los arreglos se declaran con un tamaño y tipo de datos específicos, lo que los convierte en herramientas poderosas para manejar grandes conjuntos de datos o realizar operaciones en múltiples valores simultáneamente."
     },
     {
-        title: "Functions and Procedures",
-        description: "<span>Functions</span> and <span>procedures</span> are used to break a program down into smaller, reusable modules. This modular approach improves the organization of the code, makes it easier to maintain, and reduces redundancy. With functions and procedures, developers can write cleaner code, improve program clarity, and simplify the process of updating and debugging code over time."
+        title: "Funciones y Procedimientos",
+        description: "Las <span>funciones</span> y los <span>procedimientos</span> se utilizan para dividir un programa en módulos más pequeños y reutilizables. Este enfoque modular mejora la organización del código, facilita su mantenimiento y reduce la redundancia. Con funciones y procedimientos, los desarrolladores pueden escribir código más limpio, mejorar la claridad del programa y simplificar el proceso de actualización y depuración del código con el tiempo."
     },
     {
-        title: "Data Types",
-        description: "<span>PSeInt</span> supports a variety of basic data types such as <span>Integer</span>, <span>Real</span>, <span>String</span>, and <span>Boolean</span>. Defining the correct data type for each variable ensures that the program performs accurate calculations, handles data correctly, and avoids errors. Proper data type usage is essential for effective program logic and to ensure that the program works as intended across different situations."
+        title: "Tipos de Datos",
+        description: "<span>PSeInt</span> admite una variedad de tipos de datos básicos, como <span>Entero</span>, <span>Real</span>, <span>Cadena</span> y <span>Booleano</span>. Definir el tipo de dato correcto para cada variable garantiza que el programa realice cálculos precisos, maneje los datos correctamente y evite errores. El uso adecuado de los tipos de datos es esencial para una lógica de programa efectiva y para asegurar que el programa funcione como se espera en diferentes situaciones."
     },
     {
-        title: "Input and Output Operations",
-        description: "The <span>Read</span> and <span>Write</span> commands handle user interactions in PSeInt. <span>Read</span> is used to capture input from the user, allowing the program to interact with dynamic data. On the other hand, <span>Write</span> is used to display results, messages, or prompts to the user, creating a two-way communication system between the program and the user, which is fundamental for any interactive program."
+        title: "Operaciones de Entrada y Salida",
+        description: "Los comandos <span>Leer</span> y <span>Escribir</span> manejan las interacciones del usuario en PSeInt. <span>Leer</span> se utiliza para capturar la entrada del usuario, permitiendo que el programa interactúe con datos dinámicos. Por otro lado, <span>Escribir</span> se utiliza para mostrar resultados, mensajes o indicaciones al usuario, creando un sistema de comunicación bidireccional entre el programa y el usuario, lo cual es fundamental para cualquier programa interactivo."
     },
     {
-        title: "Error Handling Basics",
-        description: "Basic error prevention involves validating inputs and ensuring that logical conditions are met before processing. This helps prevent unexpected behavior and ensures the program runs smoothly. For example, checking if the user’s input is a valid number before performing mathematical calculations prevents runtime errors and keeps the program running as expected."
+        title: "Conceptos Básicos de Manejo de Errores",
+        description: "La prevención básica de errores implica validar entradas y asegurarse de que se cumplan las condiciones lógicas antes de procesar. Esto ayuda a prevenir comportamientos inesperados y garantiza que el programa se ejecute sin problemas. Por ejemplo, verificar si la entrada del usuario es un número válido antes de realizar cálculos matemáticos evita errores en tiempo de ejecución y mantiene el programa funcionando como se espera."
     },
     {
-        title: "Best Practices in Pseudocode",
-        description: "When writing pseudocode, it's essential to use <span>meaningful variable names</span> that clearly indicate their purpose in the program. Adding comments throughout your code helps clarify the logic for others and makes it easier for you to revisit the code in the future. Additionally, maintaining proper indentation and structuring your code into <span>functions</span> or <span>procedures</span> greatly improves readability, making your pseudocode easier to follow and understand."
+        title: "Mejores Prácticas en Pseudocódigo",
+        description: "Al escribir pseudocódigo, es esencial utilizar <span>nombres de variables significativos</span> que indiquen claramente su propósito en el programa. Agregar comentarios a lo largo del código ayuda a aclarar la lógica para otros y facilita la revisión del código en el futuro. Además, mantener una <span>indentación adecuada</span> y estructurar el código en <span>funciones</span> o <span>procedimientos</span> mejora enormemente la legibilidad, haciendo que el pseudocódigo sea más fácil de seguir y entender."
     },
     {
-        title: "Menu Formatting Styles",
-        description: "When designing menus in pseudocode, using <span>clear formatting</span> enhances readability and user interaction. Different styles such as <span>boxes, lines, or symbols</span> can help organize options and improve visual structure. Below are several menu designs using <span>hyphens (-), equal signs (=), asterisks (*), and other characters</span> to create structured and intuitive interfaces."
+        title: "Estilos de Formato de Menús",
+        description: "Al diseñar menús en pseudocódigo, el uso de un <span>formato claro</span> mejora la legibilidad y la interacción del usuario. Diferentes estilos, como <span>cajas, líneas o símbolos</span>, pueden ayudar a organizar las opciones y mejorar la estructura visual. A continuación, se presentan varios diseños de menús que utilizan <span>guiones (-), signos igual (=), asteriscos (*) y otros caracteres</span> para crear interfaces estructuradas e intuitivas."
     },
     {
-        title: "Recursion on PSeInt",
-        description: "<span>Recursion</span> is a technique where a function calls itself to solve complex problems by breaking them down into simpler subproblems. It is especially useful in mathematical algorithms and data structures."
+        title: "Recursión en PSeInt",
+        description: "La <span>recursión</span> es una técnica en la que una función se llama a sí misma para resolver problemas complejos dividiéndolos en subproblemas más simples. Es especialmente útil en algoritmos matemáticos y estructuras de datos."
     },
     {
-        title: "Search and Sorting",
-        description: "The algorithms of <span>search</span> (as linear or binary search) and <span>sorting</span> (as bubble or selection) are essential for manipulating data in arrays."
+        title: "Búsqueda y Ordenamiento",
+        description: "Los algoritmos de <span>búsqueda</span> (como búsqueda lineal o binaria) y <span>ordenamiento</span> (como burbuja o selección) son esenciales para manipular datos en arreglos."
     },
     {
         title: "Matrices",
-        description: "The <span>arrays</span> allow you to store data in the form of a table (rows and columns). They are ideal for representing data such as game boards, spreadsheets, etc."
+        description: "Los <span>arreglos</span> permiten almacenar datos en forma de tabla (filas y columnas). Son ideales para representar datos como tableros de juegos, hojas de cálculo, etc."
     },
     {
-        title: "File Management",
-        description: "Although PSeInt does not handle files directly, <span>can simulate read/write operations</span> using arrays or variables to persistently store data."
+        title: "Manejo de Archivos",
+        description: "Aunque PSeInt no maneja archivos directamente, <span>puede simular operaciones de lectura/escritura</span> utilizando arreglos o variables para almacenar datos de manera persistente."
     },
     {
-        title: "Chain Handling",
-        description: "The <span>string manipulation</span> includes operations such as concatenation, substring extraction, character lookup, and case conversion."
+        title: "Manejo de Cadenas",
+        description: "La <span>manipulación de cadenas</span> incluye operaciones como concatenación, extracción de subcadenas, búsqueda de caracteres y conversión de mayúsculas y minúsculas."
     },
     {
-        title: "Procedures with Parameters",
-        description: "The <span>procedures with </span> parameters allow you to modularize your code and reuse complex logic, similar to functions, but without returning values."
+        title: "Procedimientos con Parámetros",
+        description: "Los <span>procedimientos con parámetros</span> permiten modularizar el código y reutilizar lógica compleja, similar a las funciones, pero sin devolver valores."
     },
     {
-        title: "Custom Data Structures",
-        description: "You can create <span>custom structures</span> using arrays and variables to simulate records or objects, such as storing student information."
+        title: "Estructuras de Datos Personalizadas",
+        description: "Puedes crear <span>estructuras personalizadas</span> utilizando arreglos y variables para simular registros u objetos, como almacenar información de estudiantes."
     },
     {
-        title: "Advanced Algorithms",
-        description: "Implementation of algorithms such as <span>prime numbers</span>, Fibonacci sequence, or power calculations using iterations and recursion."
+        title: "Algoritmos Avanzados",
+        description: "Implementación de algoritmos como <span>números primos</span>, secuencia de Fibonacci o cálculos de potencias utilizando iteraciones y recursión."
     },
     {
-        title: "Modular Programming",
-        description: "<span>modular programming</span> organizes code into separate modules (functions, procedures) that work together to solve a complex problem."
+        title: "Programación Modular",
+        description: "La <span>programación modular</span> organiza el código en módulos separados (funciones, procedimientos) que trabajan juntos para resolver un problema complejo."
     },
     {
-        title: "Integrative Project",
-        description: "A <span>integrator project</span> combines multiple concepts (arrangements, functions, menus) to solve a real problem, such as a library management system."
+        title: "Proyecto Integrador",
+        description: "Un <span>proyecto integrador</span> combina múltiples conceptos (arreglos, funciones, menús) para resolver un problema real, como un sistema de gestión de bibliotecas."
     },
 ]
 
@@ -88,7 +88,7 @@ export const TitlesLogicLeft: TitleType[] = [
 
 export const TitlesLogicRight: TitleType[] = [
     {
-        title: "External Resources",
-        description: "Exploring external resources is essential for strengthening and expanding your C++ knowledge. There is a vast selection of materials available, including official documentation, specialized books, discussion forums, and online tutorials. Platforms like cplusplus.com, CppReference, and Stack Overflow can help you deepen your understanding of advanced concepts and troubleshoot specific issues."
+        title: "Recursos Externos",
+        description: "Explorar recursos externos es esencial para fortalecer y ampliar tu conocimiento de C++. Existe una amplia selección de materiales disponibles, incluyendo documentación oficial, libros especializados, foros de discusión y tutoriales en línea. Plataformas como cplusplus.com, CppReference y Stack Overflow pueden ayudarte a profundizar en conceptos avanzados y solucionar problemas específicos."
     }
 ]

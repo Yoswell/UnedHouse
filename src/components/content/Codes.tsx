@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { CopyI } from "@/icons/Icons"
 import hljs from 'highlight.js'
 // import 'highlight.js/styles/nnfx-dark.min.css' -> dark mode
-import 'highlight.js/styles/dark.min.css'
+import 'highlight.js/styles/github-dark-dimmed.min.css'
 
 interface ContentProps {
     key: number

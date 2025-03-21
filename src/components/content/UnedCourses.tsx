@@ -2,31 +2,33 @@ import "@/css/Cards.css"
 import { Codes as Codes1 } from "@/constants/logicComputer/Codes"
 import { Codes as Codes2 } from "@/constants/introductionProgra/Codes"
 import { Codes as Codes3 } from "@/constants/intermediateProgra/Codes"
+import { Codes as Codes5 } from "@/constants/dataStructure/Codes"
 import { Content } from "./Content"
 import { Download1, Download2, Download3 } from "@/constants/DownloadTools"
 import { TitlesLogicLeft } from "@/constants/logicComputer/Titles"
 import { TitlesIntroLeft } from "@/constants/introductionProgra/Titles"
 import { TitlesInterLeft } from "@/constants/intermediateProgra/Titles"
+import { TitlesStructureLeft } from "@/constants/dataStructure/Titles"
 
-const completePublished = "Published on"
-const completeReading = "minutes(s) read"
+const completePublished = "Publicado el"
+const completeReading = "minuto(s) de lectura"
 
 export function LogicCumputing() {
     return (
         <Content 
-            titleCourse="Logic for Computing"
-            publishedDate={`${completePublished} Mar 11, 2025`}
+            titleCourse="Lógica para Computación"
+            publishedDate={`${completePublished} 11 de Marzo, 2025`}
             readTime={`4 ${completeReading}`}
-            tag1="Basic level"
-            tag2="180 hours"
-            tag3="Codigo: 03304"
+            tag1="Nivel básico"
+            tag2="180 horas"
+            tag3="Código: 03304"
             descriptionCourse={
                 `
-                This is a <span>theoretical</span> and <span>practical</span> course designed to help students acquire the necessary
-                <span>knowledge</span> of <span>algorithmic logic</span>, which is essential for understanding complex problem-solving
-                techniques. This knowledge forms the foundation of their initial training in <span>programming</span> and the development
-                of <span>logical-mathematical thinking</span>, key skills that are indispensable for success in modern software
-                development, computational theory, and real-world problem-solving scenarios Go ahead, browse into this section.
+                Este es un curso <span>teórico</span> y <span>práctico</span> diseñado para ayudar a los estudiantes a adquirir el 
+                <span>conocimiento</span> necesario de <span>lógica algorítmica</span>, esencial para comprender técnicas complejas de 
+                resolución de problemas. Este conocimiento forma la base de su formación inicial en <span>programación</span> y el 
+                desarrollo del <span>pensamiento lógico-matemático</span>, habilidades clave indispensables para el éxito en el desarrollo 
+                de software moderno, la teoría computacional y la resolución de problemas del mundo real. Adelante, explora esta sección.
                 `
             }
             downloadTools={Download1}
@@ -39,17 +41,19 @@ export function LogicCumputing() {
 export function IntroductionProgramming() {
     return (
         <Content 
-            titleCourse="Introduction to Programming"
-            publishedDate={`${completePublished} Mar 11, 2025`}
+            titleCourse="Introducción a la Programación"
+            publishedDate={`${completePublished} 11 de Marzo, 2025`}
             readTime={`5 ${completeReading}`}
-            tag1="Basic level"
-            tag2="180 hours"
-            tag3="Codigo: 00831"
+            tag1="Nivel básico"
+            tag2="180 horas"
+            tag3="Código: 00831"
             descriptionCourse={
                 `
-                The course is <span>theoretical and practical</span>, requiring the development of reading habits and discipline for the
-                study of theoretical content and the completion of planned activities. The goal is to foster a positive attitude among
-                students toward research and program design, applying the theoretical foundations that support it.This course is worth <span>4 credits</span> and requires a minimum of 180 hours per semester for reading, understanding, and mastering the content, as well as for research, documentation, and completion of assignments.
+                El curso es <span>teórico y práctico</span>, requiriendo el desarrollo de hábitos de lectura y disciplina para el estudio 
+                del contenido teórico y la realización de actividades planificadas. El objetivo es fomentar una actitud positiva entre los 
+                estudiantes hacia la investigación y el diseño de programas, aplicando los fundamentos teóricos que lo respaldan. Este 
+                curso tiene un valor de <span>4 créditos</span> y requiere un mínimo de 180 horas por semestre para la lectura, comprensión 
+                y dominio del contenido, así como para la investigación, documentación y realización de tareas.
                 `
             }
             downloadTools={Download2}
@@ -62,24 +66,53 @@ export function IntroductionProgramming() {
 export function IntermediateProgramming() {
     return (
         <Content 
-            titleCourse="Intermediate Programming"
-            publishedDate={`${completePublished} Mar 16, 2025`}
+            titleCourse="Programación Intermedia"
+            publishedDate={`${completePublished} 16 de Marzo, 2025`}
             readTime={`5 ${completeReading}`}
-            tag1="Intermediate level"
-            tag2="180 hours"
-            tag3="Codigo: 00824"
+            tag1="Nivel intermedio"
+            tag2="180 horas"
+            tag3="Código: 00824"
             descriptionCourse={
                 `
-                This is a <span>theoretical</span> and <span>practical</span> course designed to further develop students' skills as 
-                <span>computer programmers</span> at an <span>intermediate level</span>. The course focuses on the <span>Object-Oriented Programming (OOP)</span> 
-                paradigm through the study of <span>Java</span>, a widely used programming language. Students will enhance their 
-                <span>problem-solving abilities</span> and gain a deeper understanding of <span>software development principles</span>, 
-                preparing them for real-world computational challenges. 
+                Este es un curso <span>teórico</span> y <span>práctico</span> diseñado para desarrollar aún más las habilidades de los 
+                estudiantes como <span>programadores de computadoras</span> a un <span>nivel intermedio</span>. El curso se centra en el 
+                paradigma de <span>Programación Orientada a Objetos (POO)</span> a través del estudio de <span>Java</span>, un lenguaje de 
+                programación ampliamente utilizado. Los estudiantes mejorarán sus <span>habilidades para resolver problemas</span> y 
+                obtendrán una comprensión más profunda de los <span>principios de desarrollo de software</span>, preparándolos para 
+                desafíos computacionales del mundo real.
                 `
             }
             downloadTools={Download3}
             codeContent={TitlesInterLeft}
             codeExamples={Codes3}>
+        </Content>
+    )
+}
+
+export function DataStructure() {
+    return (
+        <Content 
+            titleCourse="Estructuras de Datos"
+            publishedDate={`${completePublished} 21 de Marzo, 2025`}
+            readTime={`5 ${completeReading}`}
+            tag1="Nivel intermedio"
+            tag2="180 horas"
+            tag3="Código: 00825"
+            descriptionCourse={
+                `
+                Este es un curso <span>teórico</span> y <span>práctico</span> diseñado para que los estudiantes dominen las 
+                <span>estructuras de datos</span> fundamentales utilizando el lenguaje de programación <span>Java</span>. El curso cubre 
+                conceptos clave como <span>arrays</span>, <span>listas enlazadas</span>, <span>pilas</span>, <span>colas</span>, 
+                <span>árboles</span> y <span>grafos</span>, así como su implementación y aplicación en problemas reales. Los estudiantes 
+                desarrollarán habilidades avanzadas en <span>manipulación de datos</span> y <span>optimización de algoritmos</span>, 
+                preparándolos para enfrentar desafíos complejos en el desarrollo de software y la resolución de problemas computacionales. 
+                Además, se enfatiza el uso de <span>buenas prácticas</span> y el pensamiento crítico para diseñar soluciones eficientes y 
+                escalables.
+                `
+            }
+            downloadTools={Download3}
+            codeContent={TitlesStructureLeft}
+            codeExamples={Codes5}>
         </Content>
     )
 }

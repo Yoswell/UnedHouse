@@ -2,6 +2,8 @@
     position: sticky;
     top: 0;
     padding: var(--p-20);
+    min-width: 290px;
+    max-width: 290px;
     
     .scroll-aside {
         display: flex;
@@ -51,17 +53,14 @@
 /*********************************************************/
 /*********************************************************/
 .menu-bar-left {
-    border-right: 1px solid var(--br-cl1);
+    border-right: 2px solid var(--bg-cl2);
 }
 
 .menu-bar-right, .menu-bar-left {
+    border-left: 2px solid var(--bg-cl2);
     .scroll-aside {
         scrollbar-width: none;
     }
-}
-
-.menu-bar-right {
-    max-width: 250px;
 }
 
 /*********************************************************/
@@ -116,7 +115,7 @@
                     padding: calc(var(--p-5) + 1px) calc(var(--p-15) - 2px);
                     border-radius: var(--r-8);
                     color: var(--fg-cl1);
-                    background-color: var(--bg-cl3);
+                    background-color: var(--br-cl1);
                 }
             }
             
@@ -139,9 +138,9 @@
 /*********************************************************/
 /*********************************************************/
 
-@media (max-width: 1600px) {
-    .container-content {
-        border: none !important;
+@media (max-width: 1510px) {
+    .menu-bar-left {
+        border-left: none;
     }
 }
 

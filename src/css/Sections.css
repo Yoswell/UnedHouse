@@ -7,10 +7,10 @@
     &::before {
         position: fixed;
         content: '';
-        bottom: -400px; left: -400px;
+        bottom: -450px; left: -450px;
         width: 500px; height: 500px;
-        background: radial-gradient(#140404 0, #1f0909);
-        filter: blur(80px); z-index: -1;
+        background-color: #04373e;
+        filter: blur(100px); z-index: -1;
     }
 
     &::after {
@@ -18,7 +18,7 @@
         content: '';
         top: -450px; right: -450px;
         width: 500px; height: 500px;
-        background: radial-gradient(#362222 0, #3e0404);
+        background-color: #04333e;
         filter: blur(100px); z-index: -1;
     }
 }
@@ -30,29 +30,15 @@
     display: flex;
     max-width: 1500px;
 
-    &::before {
-        position: fixed;
-        content: '';
-        bottom: -200px; left: -200px;
-        width: 500px; height: 500px;
-        background-image: url('/Noiss.avif');
-        background-size: 100%;
-        border-radius: 50%;
-        opacity: 0.5;
-        -webkit-mask-image: linear-gradient(50deg, var(--bg-cl1) 50%, transparent);
-        mask-image: linear-gradient(50deg, var(--bg-cl1) 50%, transparent);
-    }
-
     &::after {
         position: fixed;
         content: '';
-        top: -150px; right: -150px;
-        width: 500px; height: 500px;
+        top: 0; right: 0;
+        width: 100vw; height: 100vh;
         background-image: url('/Noiss.avif');
-        background-size: 100%;
-        border-radius: 50%;
-        -webkit-mask-image: linear-gradient(-120deg, var(--bg-cl1), transparent);
-        mask-image: linear-gradient(-120deg, var(--bg-cl1), transparent);
+        background-size: 130px;
+        opacity: 0.4;
+        z-index: -1;
     }
 }
 
@@ -150,20 +136,3 @@
 
 /*******************************************/
 /*******************************************/
-
-@media (max-width: 1300px) {
-    .container-main {
-        display: grid;
-        place-items: center;
-        overflow: hidden;
-        position: relative;
-    
-        &::before {
-            bottom: -500px; left: -500px;
-        }
-    
-        &::after {
-            top: -450px; right: -450px;
-        }
-    }
-}

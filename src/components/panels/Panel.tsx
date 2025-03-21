@@ -3,48 +3,48 @@ import { useContext, useState } from "react"
 
 const menuSections = [
     { 
-        title: "Diploma Courses",
+        title: "Cursos de Diploma",
         items: [
-            "Logic for Computing",
-            "Introduction to Programming",
-            "Intermediate Programming",
-            "Advanced Programming",
-            "Data Structure",
-            "Database",
-            "Telematics and Networks I",
-            "Operating Systems",
+            "Lógica para Computación",
+            "Introducción a la Programación",
+            "Programación Intermedia",
+            "Programación Avanzada",
+            "Estructuras de Datos",
+            "Bases de Datos",
+            "Telemática y Redes I",
+            "Sistemas Operativos",
         ]
     },
     { 
-        title: "High School Courses", 
+        title: "Cursos de Bachillerato", 
         items: [
-            "Web Programming",
-            "Compilers",
-            "Database II",
-            "Technical Support",
-            "Telematics and Networks II",
+            "Programación Web",
+            "Compiladores",
+            "Bases de Datos II",
+            "Soporte Técnico",
+            "Telemática y Redes II",
         ]
     },
     { 
-        title: "Practice Exercises", 
+        title: "Ejercicios Prácticos", 
         items: [
-            "Programming", 
-            "Databases", 
-            "Cybersecurity"
+            "Programación", 
+            "Bases de Datos", 
+            "Ciberseguridad"
         ]
     },
     { 
-        title: "Tutors contact", 
+        title: "Contacto de Tutores", 
         items: [
-            "Contact emails",
+            "Correos de contacto",
         ]
     },
     { 
-        title: "Tools that you need", 
+        title: "Herramientas que necesitas", 
         items: [
-            "Programming",
-            "Design",
-            "Record Screen",
+            "Programación",
+            "Diseño",
+            "Grabación de Pantalla",
         ]
     }
 ]
@@ -92,9 +92,9 @@ export function PanelR<T extends {title: string, description: string}>({array, a
         <aside className="menu-bar menu-bar-right">
             <div className="scroll-aside">
                 <div className="container">
-                    <h3>Sections</h3>
+                    <h3>Secciones</h3>
                     <div>
-                        {Array.from({ length: array.length - 1 }).map((_, index) => (
+                        {Array.from({ length: array.length - 2 }).map((_, index) => (
                             <li key={index}>
                                 <a onClick={() => setGoSection(array[index].title.split(" ").join("-"))} href={`#${goSection}`}>{array[index].title}</a>
                             </li>
@@ -102,7 +102,7 @@ export function PanelR<T extends {title: string, description: string}>({array, a
                     </div>
                 </div>
                 <div className="container">
-                    <h3>Sections</h3>
+                    <h3>Secciones</h3>
                     <div>
                         {arrayLinks.map((data, index) => (
                             <li key={index}>{data.title}</li>

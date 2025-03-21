@@ -1,7 +1,7 @@
 .terminal-card {
     display: grid;
-    border-radius: var(--r-10);
-    background-color: var(--bg-cl3);
+    border-radius: var(--r-12);
+    background-color: var(--bg-cl2);
     padding: 3px;
     position: relative;
 
@@ -14,12 +14,16 @@
         right: 10px;
         border: none;
         font-size: 12px;
+        padding: var(--p-5);
         background-color: transparent;
         cursor: pointer;
+        z-index: 1;
 
         svg {
             color: var(--fg-cl1);
-            width: 15px;
+            stroke-width: 2px;
+            -webkit-text-stroke-width: 2px;
+            width: 16px;
         }
     }
 
@@ -28,12 +32,13 @@
     pre {   
         overflow: hidden;
         code {
-            border-radius: var(--r-8);
-            background-color: var(--bg-cl2);
+            border-radius: var(--r-10);
+            background-color: var(--bg-cl3);
             font-size: clamp(11px, 2vw, 14px);
             padding: var(--p-20) !important;
             font-family: "JetBrains Mono", monospace;
             scrollbar-width: none;
+            position: relative;
 
             span {
                 font-family: inherit;
@@ -50,28 +55,29 @@
     &::before {
         position: absolute;
         content: '';
-        top: 0;
+        top: 10px;
         left: 15px;
-        width: 1px;
-        height: 120%;
-        background-color: var(--br-cl3);
+        width: 2px;
+        height: 100%;
+        border-radius: 3px;
+        background-color: var(--br-cl1);
     }
 }
 
-.float-number{
+.float-number {
     position: absolute;
     display: grid;
     place-content: center;
-    top: 0;
+    top: 2px;
     left: 0;
     color: var(--fg-cl1);
     width: 30px;
     height: 30px;
     font-size: 13px;
-    font-weight: 600;
     background-color: var(--bg-cl3);
     border-radius: 50%;
-    border: 1px solid var(--br-cl3);
+    border: 2px solid var(--br-cl1);
+    font-weight: 600;
 }
 
 /*******************************************/

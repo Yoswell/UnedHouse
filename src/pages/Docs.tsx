@@ -2,13 +2,14 @@ import "@/css/Docs.css"
 import React, { useState, createContext, useEffect } from "react"
 import { Panel, PanelR } from "@/components/panels/Panel"
 import { CoursesType, TitleType } from "@/types/type"
-import { IntermediateProgramming, IntroductionProgramming, LogicCumputing } from "@/components/content/UnedCourses"
+import { DataStructure, IntermediateProgramming, IntroductionProgramming, LogicCumputing } from "@/components/content/UnedCourses"
 import { TitlesLogicLeft, TitlesLogicRight } from "@/constants/logicComputer/Titles"
 import { TitlesIntroLeft, TitlesIntroRight } from "@/constants/introductionProgra/Titles"
 import { TitlesInterLeft, TitlesInterRight } from "@/constants/intermediateProgra/Titles"
 
 import { Book1, SearchI } from "@/icons/Icons"
 import { SearchDBLink } from "@/constants/SearchDB"
+import { TitlesStructureLeft, TitlesStructureRight } from "@/constants/dataStructure/Titles"
 
 export const NavContext = createContext<{ navClicked: number; setNavClicked: React.Dispatch<React.SetStateAction<number>> } | null>(null);
 
@@ -25,14 +26,14 @@ export function Docs() {
                     <div className="max-row">
                         <div className="row1">
                             <div className="separate">
-                                <span className="version">v1.0</span>
-                                <span className="version">UnedHouse v1.0 🔥</span>
+                                <h1>UnedHouse</h1>
+                                <span className="version">UnedHouse v1.0</span>
                             </div>
                         </div>
                         <div className="row3">
                             <div className="separate">
                                 <a className="empty-anchor">Feedback</a>
-                                <a className="empty-anchor">Statements</a>
+                                <a className="empty-anchor">Orientaciones</a>
                                 <a className="empty-anchor">Bugs</a>
                             </div>
                         </div>
@@ -45,36 +46,43 @@ export function Docs() {
                     <div className="scroll-main">
                         {navClicked == 1 && (
                             <><LogicCumputing />
-                            <title>UnedHouse - Logic for Computing</title></>
+                            <title>UnedHouse - Lógica para Computación</title></>
                         )}
                         {navClicked == 2 && (
                             <><IntroductionProgramming />
-                            <title>UnedHouse - Introduction to Programming</title></>
+                            <title>UnedHouse - Introducción a la Programación</title></>
                         )}
                         {navClicked == 3 && (
                             <><IntermediateProgramming />
-                            <title>UnedHouse - Intermediate Programming</title></>
+                            <title>UnedHouse - Programación Intermedia</title></>
+                        )}
+                        {navClicked == 5 && (
+                            <><DataStructure />
+                            <title>UnedHouse - Estructuras de Datos</title></>
                         )}
                     </div>
                     {navClicked == 1 && (
-                        <>
-                        <PanelR<TitleType> 
+                        <><PanelR<TitleType> 
                             array={TitlesLogicLeft}
                             arrayLinks={TitlesLogicRight}>
                         </PanelR></>
                     )}
                     {navClicked == 2 && (
-                        <>
-                        <PanelR<TitleType> 
+                        <><PanelR<TitleType> 
                             array={TitlesIntroLeft}
                             arrayLinks={TitlesIntroRight}>
                         </PanelR></>
                     )}
                     {navClicked == 3 && (
-                        <>
-                        <PanelR<TitleType> 
+                        <><PanelR<TitleType> 
                             array={TitlesInterLeft}
                             arrayLinks={TitlesInterRight}>
+                        </PanelR></>
+                    )}
+                    {navClicked == 5 && (
+                        <><PanelR<TitleType> 
+                            array={TitlesStructureLeft}
+                            arrayLinks={TitlesStructureRight}>
                         </PanelR></>
                     )}
                 </section>
