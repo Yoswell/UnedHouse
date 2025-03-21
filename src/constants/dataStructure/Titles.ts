@@ -18,16 +18,16 @@ export const TitlesStructureLeft: TitleType[] = [
         description: "Una <span>pila</span> es una estructura de datos <span>LIFO</span> (Last In, First Out) donde los elementos se agregan y eliminan desde la parte superior. En Java, las pilas se pueden implementar usando la clase <span>Stack</span> del paquete <span>java.util</span>. Las operaciones comunes incluyen <span>push</span> (para agregar un elemento), <span>pop</span> (para eliminar el elemento superior) y <span>peek</span> (para ver el elemento superior sin eliminarlo). Las pilas son ampliamente utilizadas en algoritmos como <span>DFS</span> (Depth-First Search) y para gestionar llamadas de funciones en recursión."
     },
     {
-        title: "Uso de Colas en Interfaz Gráfica",
-        description: "Para utilizar una <span>cola</span> en una interfaz gráfica, puedes vincular los métodos de la cola (como <span>enqueue</span>, <span>dequeue</span> y <span>peek</span>) a eventos de botones. Por ejemplo, al hacer clic en un botón <span>Agregar</span>, puedes tomar el valor de un <span>TextField</span> y agregarlo a la cola usando el método <span>enqueue</span>. Un botón <span>Eliminar</span> puede llamar al método <span>dequeue</span> para quitar el elemento del frente de la cola. Esto permite interactuar con la cola de manera dinámica y visual."
+        title: "Uso de Pilas en Interfaz Gráfica",
+        description: "Para utilizar una <span>pila</span> en una interfaz gráfica, puedes asociar los métodos de la pila (como <span>push</span>, <span>pop</span> y <span>peek</span>) a eventos de botones. Por ejemplo, al hacer clic en un botón <span>Agreagr</span>, puedes tomar el valor de un <span>TextField</span> y agregarlo a la pila usando el método <span>push</span>. De manera similar, un botón <span>Eliminar</span> puede llamar al método <span>pop</span> para quitar el elemento superior de la pila. Esto permite interactuar con la pila de manera dinámica y visual."
     },
     {
         title: "Colas en Java",
         description: "Una <span>cola</span> es una estructura de datos <span>FIFO</span> (First In, First Out) donde los elementos se agregan al final y se eliminan desde el frente. En Java, las colas se pueden implementar usando la interfaz <span>Queue</span>, con implementaciones comunes como <span>LinkedList</span>. Las operaciones clave incluyen <span>add</span> (para insertar un elemento), <span>poll</span> (para eliminar y devolver el elemento del frente) y <span>peek</span> (para ver el elemento del frente sin eliminarlo). Las colas son esenciales en escenarios como la planificación de tareas y algoritmos <span>BFS</span> (Breadth-First Search)."
     },
     {
-        title: "Uso de Pilas en Interfaz Gráfica",
-        description: "Para utilizar una <span>pila</span> en una interfaz gráfica, puedes asociar los métodos de la pila (como <span>push</span>, <span>pop</span> y <span>peek</span>) a eventos de botones. Por ejemplo, al hacer clic en un botón <span>Agreagr</span>, puedes tomar el valor de un <span>TextField</span> y agregarlo a la pila usando el método <span>push</span>. De manera similar, un botón <span>Eliminar</span> puede llamar al método <span>pop</span> para quitar el elemento superior de la pila. Esto permite interactuar con la pila de manera dinámica y visual."
+        title: "Uso de Colas en Interfaz Gráfica",
+        description: "Para utilizar una <span>cola</span> en una interfaz gráfica, puedes vincular los métodos de la cola (como <span>enqueue</span>, <span>dequeue</span> y <span>peek</span>) a eventos de botones. Por ejemplo, al hacer clic en un botón <span>Agregar</span>, puedes tomar el valor de un <span>TextField</span> y agregarlo a la cola usando el método <span>enqueue</span>. Un botón <span>Eliminar</span> puede llamar al método <span>dequeue</span> para quitar el elemento del frente de la cola. Esto permite interactuar con la cola de manera dinámica y visual."
     },
     {
         title: "Árboles Binarios en Java",
