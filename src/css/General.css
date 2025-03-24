@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 
 :root {
     --cl1: #ffb23f;
@@ -75,6 +75,7 @@ a { text-decoration: none; }
 h1 { 
     font-weight: 700;
     color: var(--fg-cl1);
+    font-family: "Boldonse", sans-serif;
 }
 
 h3 { font-weight: 500; }
@@ -113,9 +114,8 @@ p { line-height: 1.6; }
     
         h1 {
             color: var(--fg-cl1);
-            font-size: 26px;
-            text-transform: uppercase;
-            font-family: "UnifrakturMaguntia", cursive;
+            font-size: 16px;
+            font-family: "Boldonse", sans-serif;
         }
     }
 

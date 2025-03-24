@@ -3,7 +3,7 @@ import { useContext, useState } from "react"
 
 const menuSections = [
     { 
-        title: "Cursos de Diploma",
+        title: "Cursos de Diplomado",
         items: [
             "Lógica para Computación",
             "Introducción a la Programación",

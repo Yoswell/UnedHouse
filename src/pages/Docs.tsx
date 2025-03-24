@@ -26,8 +26,8 @@ export function Docs() {
                     <div className="max-row">
                         <div className="row1">
                             <div className="separate">
-                                <h1>UnedHouse</h1>
-                                <span className="version">UnedHouse v1.0</span>
+                                <h1>Unedhouse v1.0</h1>
+                                <span className="version">Beta</span>
                             </div>
                         </div>
                         <div className="row3">

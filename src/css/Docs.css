@@ -18,7 +18,10 @@
         display: grid;
         gap: var(--g-15);
 
-        h3 { color: var(--fg-cl1); font-size: 15px; }
+        h3 { 
+            color: var(--fg-cl1);
+            font-size: 15px;
+        }
 
         li {
             width: 100%;
@@ -31,7 +34,7 @@
             white-space: nowrap;
             font-weight: 500;
             padding-left: var(--p-20);
-            font-size: clamp(14px, 2vw, 15px);
+            font-size: 14px;
 
             a {
                 overflow: hidden;
@@ -40,7 +43,7 @@
                 color: inherit;
                 font-size: inherit;
                 max-width: 80%;
-                font-size: clamp(14px, 2vw, 15px);
+                font-size: inherit;
             }
             
             &:hover { opacity: 0.5; }
@@ -52,12 +55,7 @@
 
 /*********************************************************/
 /*********************************************************/
-.menu-bar-left {
-    border-right: 2px solid var(--bg-cl2);
-}
-
 .menu-bar-right, .menu-bar-left {
-    border-left: 2px solid var(--bg-cl2);
     .scroll-aside {
         scrollbar-width: none;
     }
@@ -95,7 +93,7 @@
             h1 {
                 display: grid;
                 gap: var(--g-10);
-                font-size: 30px;
+                font-size: 22px;
                 color: var(--fg-cl1);
             }
 
@@ -111,18 +109,23 @@
                 gap: var(--g-10);
 
                 span {
-                    font-size: 15px;
-                    padding: calc(var(--p-5) + 1px) calc(var(--p-15) - 2px);
-                    border-radius: var(--r-8);
+                    font-size: 13px;
+                    padding: var(--p-5) var(--p-15);
+                    border-radius: var(--r-10);
                     color: var(--fg-cl1);
-                    background-color: var(--br-cl1);
+                    background-color: var(--bg-bl-1);
+                    border: 1px solid var(--br-bl-1);
                 }
             }
             
             p { 
-                color: var(--fg-cl3); 
+                color: var(--fg-cl2); 
                 font-size: clamp(14px, 2vw, 16px);
-                span { font-weight: 600; font-style: italic; color: var(--fg-cl2); }
+                span { 
+                    font-weight: 600; 
+                    font-style: italic; 
+                    color: var(--fg-cl1); 
+                }
             }
         }
     }
