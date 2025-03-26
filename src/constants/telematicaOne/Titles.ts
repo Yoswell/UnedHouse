@@ -1,10 +1,11 @@
 import { TitleType } from "@/types/type"
-const spaces = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●&nbsp;`;
+const spacesDot = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●&nbsp;`
+const spaces = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`
 
 export const TitlesNetworkILeft: TitleType[] = [
     {
-        title: "Configuración Inicial del Router",
-        description: "Asignación de <span>hostname</span>, contraseñas en consola y TTY (<span>line console/aux</span>), y configuración de <span>banners legales</span>. Uso de <span>service password-encryption</span> para proteger contraseñas."
+        title: "Conceptos Básicos de Redes",
+        description: "Fundamentos de redes: <span>OSI/TCP-IP</span>, <span>dispositivos de red</span> (routers, switches, hubs), <span>direccionamiento IP</span> (IPv4/IPv6), <span>subnetting</span>, y <span>protocolos comunes</span> (TCP, UDP, ICMP). Diferencias entre redes LAN, MAN y WAN."
     },
     {
         title: "Contraseñas y Seguridad Básica",
@@ -12,7 +13,18 @@ export const TitlesNetworkILeft: TitleType[] = [
     },    
     {
         title: "Configuración de Interfaces y Subinterfaces",
-        description: "Asignación de IPs a interfaces físicas y lógicas (<span>GigabitEthernet, Serial</span>). Creación de subinterfaces para VLANs con <span>encapsulation dot1Q</span>. Uso de <span>no shutdown</span> para activación."
+        description: `
+            Asignación de IPs a interfaces físicas y lógicas (<span>GigabitEthernet, Serial</span>). Creación de subinterfaces para VLANs con <span>encapsulation dot1Q</span>. Uso de <span>no shutdown</span> para activación.
+            Configuración avanzada de interfaces físicas y lógicas:
+            <br><br>${spacesDot} Las interfaces físicas se identifican por tipo y número (<span>GigabitEthernet0/0</span>, <span>Serial0/0/0</span>)
+            <br>${spacesDot} Las subinterfaces se crean añadiendo un punto (.10), generalmente coincide con el ID de VLAN.
+            <br>${spacesDot} El encapsulamiento VLAN de cada subinterfaz requiere <span>encapsulation dot1Q XX</span> donde <span>XX</span> es el VLAN ID.
+            <br>${spacesDot} La activación de las interfaces requiere <span>no shutdown</span> para habilitarlas.
+            <br><br>Notas clave:
+            <br>${spaces} 1. El número de subinterfaz (.10) es arbitrario pero por convención se usa el VLAN ID
+            <br>${spaces} 2. Cada subinterfaz actúa como gateway para su VLAN
+            <br>${spaces} 3. La interfaz física padre NO debe tener dirección IP
+        `
     },
     {
         title: "Banners Legales y Mensajes",
@@ -23,13 +35,13 @@ export const TitlesNetworkILeft: TitleType[] = [
         description: `
             La <span>gestión de configuraciones</span> permite respaldar, restaurar y comparar configuraciones de red para mantener la estabilidad de la infraestructura. A través de comandos específicos, se pueden automatizar tareas de administración de configuraciones y asegurarse de que los cambios se gestionen de forma eficiente y segura. 
             Implementación completa de gestión de configuraciones:
-            <br><br>${spaces} Backup con <span>copy running-config tftp://192.168.1.100/router.cfg</span>
-            <br>${spaces} Restauración mediante <span>configure replace</span>
-            <br>${spaces} Borrado seguro con <span>write erase</span> + <span>reload</span>
-            <br>${spaces} Comparación de configuraciones con <span>show archive config differences</span>
-            <br>${spaces} Uso de <span>archive</span> para versionado automático
-            <br>${spaces} Configuración de servidores <span>TFTP</span> y <span>SCP</span> para almacenamiento externo
-            <br>${spaces} Implementación de <span>configuration rollback</span> para revertir cambios críticos
+            <br><br>${spacesDot} Backup con <span>copy running-config tftp://192.168.1.100/router.cfg</span>
+            <br>${spacesDot} Restauración mediante <span>configure replace</span>
+            <br>${spacesDot} Borrado seguro con <span>write erase</span> + <span>reload</span>
+            <br>${spacesDot} Comparación de configuraciones con <span>show archive config differences</span>
+            <br>${spacesDot} Uso de <span>archive</span> para versionado automático
+            <br>${spacesDot} Configuración de servidores <span>TFTP</span> y <span>SCP</span> para almacenamiento externo
+            <br>${spacesDot} Implementación de <span>configuration rollback</span> para revertir cambios críticos
         `
     },      
     {
@@ -37,13 +49,13 @@ export const TitlesNetworkILeft: TitleType[] = [
         description: `
             Configuración del servicio <span>DHCP</span> en el router para asignar dinámicamente direcciones IP a los dispositivos en la red. Se establece un <span>pool de direcciones</span> con un rango específico, configurando opciones como <span>tiempo de arrendamiento</span>, <span>puerta de enlace predeterminada</span> y <span>servidores DNS</span>. Además, se pueden configurar <span>reservas de IP</span> para asignar direcciones fijas a dispositivos específicos dentro de la red. La implementación de DHCP mejora la administración de direcciones IP y facilita la configuración de dispositivos sin intervención manual.
             Implementación completa de servidor DHCP:
-            <br><br>${spaces} Creación de pools con <span>ip dhcp pool LAN</span>
-            <br>${spaces} Exclusión de IPs estáticas (<span>ip dhcp excluded-address</span>)
-            <br>${spaces} Asignación de parámetros: <span>default-router</span>, <span>dns-server</span>
-            <br>${spaces} Opciones avanzadas: <span>lease infinite</span>, <span>domain-name</span>
-            <br>${spaces} Soporte para DHCPv6 (<span>ipv6 dhcp pool</span>)
-            <br>${spaces} Monitoreo con <span>show ip dhcp binding</span>
-            <br>${spaces} Configuración de DHCP relay con <span>ip helper-address</span>
+            <br><br>${spacesDot} Creación de pools con <span>ip dhcp pool LAN</span>
+            <br>${spacesDot} Exclusión de IPs estáticas (<span>ip dhcp excluded-address</span>)
+            <br>${spacesDot} Asignación de parámetros: <span>default-router</span>, <span>dns-server</span>
+            <br>${spacesDot} Opciones avanzadas: <span>lease infinite</span>, <span>domain-name</span>
+            <br>${spacesDot} Soporte para DHCPv6 (<span>ipv6 dhcp pool</span>)
+            <br>${spacesDot} Monitoreo con <span>show ip dhcp binding</span>
+            <br>${spacesDot} Configuración de DHCP relay con <span>ip helper-address</span>
         `
     },
     {
@@ -51,13 +63,13 @@ export const TitlesNetworkILeft: TitleType[] = [
         description: `
             Administración de redes virtuales mediante la creación y asignación de <span>VLANs</span> en switches. Configuración de <span>nombres</span> y <span>puertos de acceso</span> para segmentar la red de manera eficiente. Implementación de <span>trunking (802.1Q)</span> para la comunicación entre switches y enrutamiento inter-VLAN con un router o switch capa 3. Se recomienda el uso de <span>VLAN nativa</span> y la asignación segura de puertos para evitar ataques como <span>VLAN hopping</span>.    
             Administración de redes virtuales:
-            <br><br>${spaces} Creación en switches: <span>vlan 10 name Ventas</span>
-            <br>${spaces} Asignación de puertos: <span>switchport mode access</span>
-            <br>${spaces} Configuración de trunk: <span>switchport trunk encapsulation dot1q</span>
-            <br>${spaces} Optimización con <span>spanning-tree portfast</span>
-            <br>${spaces} Agregación de enlaces: <span>channel-group 1 mode active</span>
-            <br>${spaces} Seguridad de puertos: <span>switchport port-security</span>
-            <br>${spaces} Monitoreo con <span>show vlan brief</span> y <span>show interfaces switchport</span>
+            <br><br>${spacesDot} Creación en switches: <span>vlan 10 name Ventas</span>
+            <br>${spacesDot} Asignación de puertos: <span>switchport mode access</span>
+            <br>${spacesDot} Configuración de trunk: <span>switchport trunk encapsulation dot1q</span>
+            <br>${spacesDot} Optimización con <span>spanning-tree portfast</span>
+            <br>${spacesDot} Agregación de enlaces: <span>channel-group 1 mode active</span>
+            <br>${spacesDot} Seguridad de puertos: <span>switchport port-security</span>
+            <br>${spacesDot} Monitoreo con <span>show vlan brief</span> y <span>show interfaces switchport</span>
         `
     }
 ]

@@ -3,8 +3,7 @@
     border-radius: var(--r-12);
     background-color: var(--br-cl1);
     position: relative;
-    padding: 4px;
-    outline: 1px solid var(--br-cl2);
+    padding: 2px;
 
     button {
         position: absolute;
@@ -34,12 +33,13 @@
         overflow: hidden;
         code {
             border-radius: var(--r-10);
-            background-color: var(--bg-cl3);
-            font-size: clamp(11px, 2vw, 13px);
+            background-color: var(--bg-cl1);
+            font-size: clamp(12px, 2vw, 13px);
             padding: var(--p-20) !important;
             font-family: "JetBrains Mono", monospace;
             scrollbar-width: none;
             position: relative;
+            font-weight: 500;
 
             span {
                 font-family: inherit;
@@ -79,7 +79,6 @@
 
     p { 
         color: var(--fg-cl2); 
-        font-size: clamp(14px, 2vw, 15px);
 
         span { 
             color: var(--fg-cl1); 

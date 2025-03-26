@@ -7,19 +7,30 @@
     &::before {
         position: fixed;
         content: '';
-        bottom: -450px; left: -450px;
-        width: 500px; height: 500px;
-        background-color: #04373e;
-        filter: blur(100px); z-index: -1;
+        top: -100px;
+        right: -100px;
+        width: 600px; 
+        height: 600px;
+        border-radius: 50%;
+        background-color: var(--bg-cl1);
+        border-bottom: 5px solid #d8ff2c;
+        border-left: 3px solid #d8ff2c;
+        border-right: 3px solid #d8ff2c;
+        z-index: -1;
     }
 
     &::after {
         position: fixed;
         content: '';
-        top: -450px; right: -450px;
-        width: 500px; height: 500px;
-        background-color: #04333e;
-        filter: blur(100px); z-index: -1;
+        top: -120px;
+        right: -120px;
+        transform: translateX(-50%);
+        width: 500px; 
+        height: 500px;
+        background-color: var(--bg-cl1);
+        background-image: url('/Ondu.svg');
+        background-size: 100%;
+        z-index: -2;
     }
 }
 
@@ -30,22 +41,37 @@
     display: flex;
     max-width: 1500px;
 
+    &::before {
+        position: fixed;
+        content: '';
+        bottom: -100px;
+        left: -100px;
+        width: 600px; 
+        height: 600px;
+        border-radius: 50%;
+        background-color: var(--bg-cl1);
+        border-top: 5px solid #d8ff2c;
+        border-left: 3px solid #d8ff2c;
+        border-right: 3px solid #d8ff2c;
+        z-index: -2;
+    }
+
     &::after {
         position: fixed;
         content: '';
-        top: 0; right: 0;
-        width: 100vw; height: 100vh;
-        background-image: url('/Noiss.avif');
-        background-size: 130px;
-        opacity: 0.4;
-        z-index: -1;
+        bottom: -120px;
+        left: -120px;
+        width: 800px; 
+        height: 800px;
+        background-color: var(--bg-cl1);
+        background-image: url('/Ondu.svg');
+        background-size: 100%;
+        z-index: -3;
     }
 }
 
 .scroll-main {
     width: 100%;
-    position: sticky;
-    top: 0;
     height: calc(100vh - 55px);
     overflow-x: hidden;
     scroll-behavior: smooth;

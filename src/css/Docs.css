@@ -4,6 +4,7 @@
     padding: var(--p-20);
     min-width: 270px;
     max-width: 270px;
+    backdrop-filter: blur(70px);
     
     .scroll-aside {
         display: flex;
@@ -53,25 +54,27 @@
 
 /*********************************************************/
 /*********************************************************/
-.menu-bar-left { 
-    border-left: 1px solid var(--br-cl2);
-    border-right: 1px solid var(--br-cl2);
+.menu-bar-left, .menu-bar-right { 
+    border-left: 2px solid var(--bg-cl1);
+    border-right: 2px solid var(--bg-cl1);
 }
-.menu-bar-right { border-left: 1px solid var(--br-cl1); }
 
 .menu-bar-right, .menu-bar-left {
     .scroll-aside { scrollbar-width: none; }
 }
 
+
 /*********************************************************/
 /*********************************************************/
 
 .scroll-main {
+    backdrop-filter: blur(70px);
+    
     .container-content {
         display: grid;
         width: 100%;
-        gap: calc(var(--g-20) * 3);
         padding: 40px;
+        gap: calc(var(--g-20) * 3);
         
         .banner-top {
             width: 100%;

@@ -35,7 +35,7 @@ export function Docs() {
                             <div className="separate">
                                 <a className="empty-anchor">Feedback</a>
                                 <a className="empty-anchor">Orientaciones</a>
-                                <a className="empty-anchor">Bugs</a>
+                                <a className="fill-anchor">Reportar Bugs</a>
                             </div>
                         </div>
                     </div>
