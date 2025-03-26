@@ -1,9 +1,10 @@
 .terminal-card {
     display: grid;
     border-radius: var(--r-12);
-    background-color: var(--bg-cl2);
-    padding: 3px;
+    background-color: var(--br-cl1);
     position: relative;
+    padding: 4px;
+    outline: 1px solid var(--br-cl2);
 
     button {
         position: absolute;
@@ -34,7 +35,7 @@
         code {
             border-radius: var(--r-10);
             background-color: var(--bg-cl3);
-            font-size: clamp(11px, 2vw, 14px);
+            font-size: clamp(11px, 2vw, 13px);
             padding: var(--p-20) !important;
             font-family: "JetBrains Mono", monospace;
             scrollbar-width: none;
@@ -48,35 +49,21 @@
     }
 }
 
-.scroll-main .container {
-    position: relative;
-    padding-left: 40px;
-
-    &::before {
-        position: absolute;
-        content: '';
-        top: 10px;
-        left: 15px;
-        width: 2px;
-        height: 100%;
-        border-radius: 3px;
-        background-color: var(--br-cl1);
-    }
-}
+.scroll-main .container { position: relative; }
 
 .float-number {
     position: absolute;
-    display: grid;
+    display: none;
     place-content: center;
-    top: 2px;
-    left: 0;
-    color: var(--fg-cl3);
+    top: -15px;
+    left: -15px;
+    color: var(--fg-cl1);
     width: 30px;
     height: 30px;
     font-size: 13px;
     background-color: var(--bg-cl3);
     border-radius: 50%;
-    border: 2px solid var(--br-cl1);
+    border: 2px solid var(--br-cl3);
     font-weight: 600;
 }
 
@@ -92,7 +79,7 @@
 
     p { 
         color: var(--fg-cl2); 
-        font-size: clamp(14px, 2vw, 16px);
+        font-size: clamp(14px, 2vw, 15px);
 
         span { 
             color: var(--fg-cl1); 
@@ -100,6 +87,7 @@
             border-radius: var(--r-6);
             font-style: italic;
         }
+        
     }
 }
 

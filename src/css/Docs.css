@@ -2,8 +2,8 @@
     position: sticky;
     top: 0;
     padding: var(--p-20);
-    min-width: 290px;
-    max-width: 290px;
+    min-width: 270px;
+    max-width: 270px;
     
     .scroll-aside {
         display: flex;
@@ -30,10 +30,8 @@
             align-items: center;
             gap: var(--g-10);
             cursor: pointer;
-            padding: 5px 0; 
             white-space: nowrap;
-            font-weight: 500;
-            padding-left: var(--p-20);
+            padding: 6px var(--p-15);
             font-size: 14px;
 
             a {
@@ -55,10 +53,14 @@
 
 /*********************************************************/
 /*********************************************************/
+.menu-bar-left { 
+    border-left: 1px solid var(--br-cl2);
+    border-right: 1px solid var(--br-cl2);
+}
+.menu-bar-right { border-left: 1px solid var(--br-cl1); }
+
 .menu-bar-right, .menu-bar-left {
-    .scroll-aside {
-        scrollbar-width: none;
-    }
+    .scroll-aside { scrollbar-width: none; }
 }
 
 /*********************************************************/
@@ -110,17 +112,19 @@
 
                 span {
                     font-size: 13px;
-                    padding: var(--p-5) var(--p-15);
-                    border-radius: var(--r-10);
+                    text-align: center; 
+                    white-space: nowrap;
+                    border-radius: var(--r-6);
                     color: var(--fg-cl1);
-                    background-color: var(--bg-bl-1);
-                    border: 1px solid var(--br-bl-1);
+                    background-color: var(--bg-cl2);
+                    outline: 1px solid var(--br-cl2);
+                    padding: var(--p-5) var(--p-10) calc(var(--p-5) + 1px) var(--p-10);
                 }
             }
             
             p { 
                 color: var(--fg-cl2); 
-                font-size: clamp(14px, 2vw, 16px);
+                font-size: clamp(14px, 2vw, 15px);
                 span { 
                     font-weight: 600; 
                     font-style: italic; 

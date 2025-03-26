@@ -61,3 +61,33 @@ export const Download4 = [
         link: "https://dotnet.microsoft.com/es-es/download/dotnet-framework"
     }
 ]
+
+export const Download5 = [
+    {
+        title: "Gns3 Software Simulation Tool",
+        link: "https://www.gns3.com/software/download"
+    }, 
+    {
+        title: "Serie C7200 IOS versión 15 -> (Router)",
+        link: "https://archive.org/download/c2691-adventerprisek9-mz.124-15.T14/c7200-adventerprisek9-mz.152-4.M7.bin",
+    }, 
+    {
+        title: "Serie C7200 IOS versión 12.4.15T14 -> (Router)",
+        link: "https://archive.org/download/c2691-adventerprisek9-mz.124-15.T14/c3745-adventerprisek9-mz.124-15.T14.bin"
+    },
+    {
+        title: "Serie C3745 IOS versión 12.4.25d -> (Switch and Router)",
+        link: "https://archive.org/download/c2691-adventerprisek9-mz.124-15.T14/c3725-adventerprisek9-mz.124-25d.bin"
+    },
+    {
+        title: "Serie C3745 12.4.15T14 -> (Switch and Router)",
+        link: "https://archive.org/download/c2691-adventerprisek9-mz.124-15.T14/c3725-adventerprisek9-mz.124-15.T14.bin"
+    }
+]
+
+/*
+{
+    title: "",
+    link: ""
+}
+*/

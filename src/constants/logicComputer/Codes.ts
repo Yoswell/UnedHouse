@@ -107,39 +107,16 @@ FinFuncion`,
 
 /* 9 --------------------------------------------------*/
 `Algoritmo MenuSimple
-    Escribir ═══════════════════════════════════
-    Escribir ║         MENÚ PRINCIPAL
-    Escribir ═══════════════════════════════════
-    Escribir ║ 1. Opción
-    Escribir ║ 2. Opción
-    Escribir ║ 3. Opción
-    Escribir ║ 4. Salir
-    Escribir ═══════════════════════════════════
+    // Simbolos necesarios
+    Arriba y abajo : ═ ─ * -
+    Laterales : ║ │ * |
+    Vortices : ╭ ╮ ╰ ╯ * -
 
-    Escribir ********************************
-    Escribir *         MENÚ PRINCIPAL       *
-    Escribir ********************************
-    Escribir * 1. Opción                    *
-    Escribir * 2. Opción                    *
-    Escribir * 3. Opción                    *
-    Escribir * 4. Salir                     *
-    Escribir ********************************
-
-    Escribir [------------------------------]
-    Escribir [         MENÚ PRINCIPAL       ]
-    Escribir [------------------------------]
-    Escribir [ 1 ] Opción                   ]
-    Escribir [ 2 ] Opción                   ]
-    Escribir [ 3 ] Opción                   ]
-    Escribir [ 4 ] Salir                    ]
-    Escribir [------------------------------]
-
+    // Menus styles
     Escribir ╭─────────────────────────────────╮
     Escribir │         MENÚ PRINCIPAL
     Escribir ├─────────────────────────────────┤
     Escribir │ 1 → Opción 
-    Escribir │ 2 → Opción 
-    Escribir │ 3 → Opción 
     Escribir │ 4 → Salir
     Escribir ╰─────────────────────────────────╯
 FinAlgoritmo

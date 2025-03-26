@@ -2,10 +2,11 @@ import "@/css/Docs.css"
 import React, { useState, createContext, useEffect } from "react"
 import { Panel, PanelR } from "@/components/panels/Panel"
 import { CoursesType, TitleType } from "@/types/type"
-import { DataStructure, IntermediateProgramming, IntroductionProgramming, LogicCumputing } from "@/components/content/UnedCourses"
+import { DataStructure, IntermediateProgramming, IntroductionProgramming, LogicCumputing, NetworkI } from "@/components/content/UnedCourses"
 import { TitlesLogicLeft, TitlesLogicRight } from "@/constants/logicComputer/Titles"
 import { TitlesIntroLeft, TitlesIntroRight } from "@/constants/introductionProgra/Titles"
 import { TitlesInterLeft, TitlesInterRight } from "@/constants/intermediateProgra/Titles"
+import { TitlesNetworkILeft, TitlesNetworkIRight } from "@/constants/telematicaOne/Titles"
 
 import { Book1, SearchI } from "@/icons/Icons"
 import { SearchDBLink } from "@/constants/SearchDB"
@@ -60,6 +61,10 @@ export function Docs() {
                             <><DataStructure />
                             <title>UnedHouse - Estructuras de Datos</title></>
                         )}
+                        {navClicked == 7 && (
+                            <><NetworkI />
+                            <title>UnedHouse - Telematica y redes I</title></>
+                        )}
                     </div>
                     {navClicked == 1 && (
                         <><PanelR<TitleType> 
@@ -83,6 +88,12 @@ export function Docs() {
                         <><PanelR<TitleType> 
                             array={TitlesStructureLeft}
                             arrayLinks={TitlesStructureRight}>
+                        </PanelR></>
+                    )}
+                    {navClicked == 7 && (
+                        <><PanelR<TitleType> 
+                            array={TitlesNetworkILeft}
+                            arrayLinks={TitlesNetworkIRight}>
                         </PanelR></>
                     )}
                 </section>

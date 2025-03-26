@@ -3,12 +3,14 @@ import { Codes as Codes1 } from "@/constants/logicComputer/Codes"
 import { Codes as Codes2 } from "@/constants/introductionProgra/Codes"
 import { Codes as Codes3 } from "@/constants/intermediateProgra/Codes"
 import { Codes as Codes5 } from "@/constants/dataStructure/Codes"
+import { Codes as Codes7 } from "@/constants/telematicaOne/Codes"
 import { Content } from "./Content"
-import { Download1, Download2, Download3 } from "@/constants/DownloadTools"
+import { Download1, Download2, Download3, Download5 } from "@/constants/DownloadTools"
 import { TitlesLogicLeft } from "@/constants/logicComputer/Titles"
 import { TitlesIntroLeft } from "@/constants/introductionProgra/Titles"
 import { TitlesInterLeft } from "@/constants/intermediateProgra/Titles"
 import { TitlesStructureLeft } from "@/constants/dataStructure/Titles"
+import { TitlesNetworkILeft } from "@/constants/telematicaOne/Titles"
 
 const completePublished = "Publicado el"
 const completeReading = "minuto(s) de lectura"
@@ -113,6 +115,31 @@ export function DataStructure() {
             downloadTools={Download3}
             codeContent={TitlesStructureLeft}
             codeExamples={Codes5}>
+        </Content>
+    )
+}
+
+export function NetworkI() {
+    return (
+        <Content 
+            titleCourse="Telematica y redes I"
+            publishedDate={`${completePublished} 25 de Marzo, 2025`}
+            readTime={`20 ${completeReading}`}
+            tag1="Nivel basico"
+            tag2="180 horas"
+            tag3="Código: 00883"
+            descriptionCourse={
+                `
+                Este es un curso <span>teórico</span> y <span>práctico</span> enfocado en el estudio del <span>transporte de datos</span> y la 
+                <span>distribución de la información</span> a través de redes públicas y privadas. Forma parte del plan de estudios de la 
+                carrera de <span>Ingeniería Informática</span> (código 00883) en la <span>Universidad Estatal a Distancia</span>, proporcionando 
+                a los estudiantes conocimientos avanzados sobre <span>arquitecturas de red</span>, <span>protocolos de comunicación</span> y 
+                <span>tecnologías emergentes</span>.  
+                `
+            }
+            downloadTools={Download5}
+            codeContent={TitlesNetworkILeft}
+            codeExamples={Codes7}>
         </Content>
     )
 }
