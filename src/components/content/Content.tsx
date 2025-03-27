@@ -1,3 +1,4 @@
+import { FC } from "react"
 import { DownloadToolsType, TitleType } from "@/types/type"
 import { Code } from "@/components/content/Codes"
 
@@ -14,7 +15,7 @@ interface contentProps {
     codeExamples: string[]
 }
 
-export function Content({titleCourse, publishedDate, readTime, tag1, tag2, tag3, descriptionCourse, downloadTools, codeContent, codeExamples}: contentProps) {
+export const Content : FC<contentProps> = ({titleCourse, publishedDate, readTime, tag1, tag2, tag3, descriptionCourse, downloadTools, codeContent, codeExamples}) => {
     return (
         <div className="container-content">
             <section className="banner-top">
@@ -32,9 +33,7 @@ export function Content({titleCourse, publishedDate, readTime, tag1, tag2, tag3,
                 <ul className="ul-links">
                     {downloadTools.map((data, index) => (
                         <li key={index}>
-                            <a href={data.link} target="_blank">
-                                Download {data.title}
-                            </a>
+                            <a href={data.link} target="_blank">Download {data.title}</a>
                         </li>
                     ))}
                 </ul>

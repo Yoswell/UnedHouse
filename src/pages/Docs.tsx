@@ -1,16 +1,16 @@
 import "@/css/Docs.css"
 import React, { useState, createContext, useEffect } from "react"
 import { Panel, PanelR } from "@/components/panels/Panel"
-import { CoursesType, TitleType } from "@/types/type"
+import { CoursesType } from "@/types/type"
 import { DataStructure, IntermediateProgramming, IntroductionProgramming, LogicCumputing, NetworkI } from "@/components/content/UnedCourses"
-import { TitlesLogicLeft, TitlesLogicRight } from "@/constants/logicComputer/Titles"
-import { TitlesIntroLeft, TitlesIntroRight } from "@/constants/introductionProgra/Titles"
-import { TitlesInterLeft, TitlesInterRight } from "@/constants/intermediateProgra/Titles"
-import { TitlesNetworkILeft, TitlesNetworkIRight } from "@/constants/telematicaOne/Titles"
+import { TitlesLogicLeft } from "@/constants/logicComputer/Titles"
+import { TitlesIntroLeft } from "@/constants/introductionProgra/Titles"
+import { TitlesInterLeft } from "@/constants/intermediateProgra/Titles"
+import { TitlesNetworkILeft } from "@/constants/telematicaOne/Titles"
+import { TitlesStructureLeft } from "@/constants/dataStructure/Titles"
 
 import { Book1, SearchI } from "@/icons/Icons"
 import { SearchDBLink } from "@/constants/SearchDB"
-import { TitlesStructureLeft, TitlesStructureRight } from "@/constants/dataStructure/Titles"
 
 export const NavContext = createContext<{ navClicked: number; setNavClicked: React.Dispatch<React.SetStateAction<number>> } | null>(null);
 
@@ -43,8 +43,10 @@ export function Docs() {
                 { /* ------------------------------------- */ }
                 { /* ------------------------------------- */ }
                 <section className="column-3">
+                    <div className="empty-block"></div>
                     <Panel />
                     <div className="scroll-main">
+                        <input className="search-input" placeholder="Buscar"></input>
                         {navClicked == 1 && (
                             <><LogicCumputing />
                             <title>UnedHouse - Lógica para Computación</title></>
@@ -67,34 +69,19 @@ export function Docs() {
                         )}
                     </div>
                     {navClicked == 1 && (
-                        <><PanelR<TitleType> 
-                            array={TitlesLogicLeft}
-                            arrayLinks={TitlesLogicRight}>
-                        </PanelR></>
+                        <PanelR array={TitlesLogicLeft}></PanelR>
                     )}
                     {navClicked == 2 && (
-                        <><PanelR<TitleType> 
-                            array={TitlesIntroLeft}
-                            arrayLinks={TitlesIntroRight}>
-                        </PanelR></>
+                        <PanelR array={TitlesIntroLeft}></PanelR>
                     )}
                     {navClicked == 3 && (
-                        <><PanelR<TitleType> 
-                            array={TitlesInterLeft}
-                            arrayLinks={TitlesInterRight}>
-                        </PanelR></>
+                        <PanelR array={TitlesInterLeft}></PanelR>
                     )}
                     {navClicked == 5 && (
-                        <><PanelR<TitleType> 
-                            array={TitlesStructureLeft}
-                            arrayLinks={TitlesStructureRight}>
-                        </PanelR></>
+                        <PanelR array={TitlesStructureLeft}></PanelR>
                     )}
                     {navClicked == 7 && (
-                        <><PanelR<TitleType> 
-                            array={TitlesNetworkILeft}
-                            arrayLinks={TitlesNetworkIRight}>
-                        </PanelR></>
+                        <PanelR array={TitlesNetworkILeft}></PanelR>
                     )}
                 </section>
             </div>

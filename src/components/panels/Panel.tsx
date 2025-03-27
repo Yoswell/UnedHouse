@@ -1,50 +1,52 @@
+import { FC } from "react"
 import { NavContext } from "@/pages/Docs"
 import { useContext, useState } from "react"
+import { TitleType } from "@/types/type"
 
 const menuSections = [
     { 
         title: "Cursos de Diplomado",
         items: [
-            "Lógica para Computación",
-            "Introducción a la Programación",
-            "Programación Intermedia",
-            "Programación Avanzada",
-            "Estructuras de Datos",
-            "Bases de Datos",
-            "Telemática y Redes I",
-            "Sistemas Operativos",
+            "🤪 Lógica para Computación",
+            "😛 Introducción a la Programación",
+            "😬 Programación Intermedia",
+            "👀 Programación Avanzada",
+            "😦 Estructuras de Datos",
+            "😨 Bases de Datos",
+            "🌐 Telemática y Redes I",
+            "🧠 Sistemas Operativos",
         ]
     },
     { 
         title: "Cursos de Bachillerato", 
         items: [
-            "Programación Web",
-            "Compiladores",
-            "Bases de Datos II",
-            "Soporte Técnico",
-            "Telemática y Redes II",
+            "😡 Programación Web",
+            "😈 Compiladores",
+            "🐌 Bases de Datos II",
+            "🐙 Soporte Técnico",
+            "🗺 Telemática y Redes II",
         ]
     },
     { 
         title: "Ejercicios Prácticos", 
         items: [
-            "Programación", 
-            "Bases de Datos", 
-            "Ciberseguridad"
+            "🚀 Programación", 
+            "⏳ Bases de Datos", 
+            "🔥 Ciberseguridad"
         ]
     },
     { 
         title: "Contacto de Tutores", 
         items: [
-            "Correos de contacto",
+            "🧩 Correos de contacto",
         ]
     },
     { 
         title: "Herramientas que necesitas", 
         items: [
-            "Programación",
-            "Diseño",
-            "Grabación de Pantalla",
+            "🚀 Programación",
+            "🎭 Diseño",
+            "🎮 Grabación de Pantalla",
         ]
     }
 ]
@@ -60,7 +62,7 @@ export function Panel() {
                 {menuSections.map((section, sectionIndex) => (
                     <div className="container" key={sectionIndex}>
                         <h3>{section.title}</h3>
-                        <div>
+                        <div className="separate">
                             {section.items.map((item, itemIndex) => {
                                 const id = sectionIndex * 10 + itemIndex + 1;
                                 return (
@@ -70,7 +72,7 @@ export function Panel() {
                                         onClick={() => setNavClicked(id)}>
                                         {item}
                                     </li>
-                                );
+                                )
                             })}
                         </div>
                     </div>
@@ -80,12 +82,11 @@ export function Panel() {
     )
 }
 
-interface PanelRightProps<T> {
-    array: T[]
-    arrayLinks: T[]
+interface PanelRProps {
+    array: TitleType[]
 }
 
-export function PanelR<T extends {title: string, description: string}>({array, arrayLinks}: PanelRightProps<T>) {
+export const PanelR: FC<PanelRProps> = ({ array }) => {
     const [goSection, setGoSection] = useState("")
 
     return (
@@ -98,14 +99,6 @@ export function PanelR<T extends {title: string, description: string}>({array, a
                             <li key={index}>
                                 <a onClick={() => setGoSection(array[index].title.split(" ").join("-"))} href={`#${goSection}`}>{array[index].title}</a>
                             </li>
-                        ))}
-                    </div>
-                </div>
-                <div className="container">
-                    <h3>Secciones</h3>
-                    <div>
-                        {arrayLinks.map((data, index) => (
-                            <li key={index}>{data.title}</li>
                         ))}
                     </div>
                 </div>

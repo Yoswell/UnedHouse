@@ -18,8 +18,7 @@ export function Code({key, title, description, indexCode, codeString}: ContentPr
     }, [])
 
     return (
-        <div className="container" key={key} id={title.split(" ").join("-")}>
-            <h5 className="float-number">{indexCode}</h5>
+        <article className="container" key={key} id={title.split(" ").join("-")}>
             <div className="title-devide">
                 <h1>{title}</h1>
                 <p dangerouslySetInnerHTML={{ __html: description }} />
@@ -32,6 +31,6 @@ export function Code({key, title, description, indexCode, codeString}: ContentPr
                     </code>
                 </pre>
             </article>
-        </div>
+        </article>
     )
 }

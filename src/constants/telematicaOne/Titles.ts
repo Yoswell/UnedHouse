@@ -74,9 +74,9 @@ export const TitlesNetworkILeft: TitleType[] = [
     }
 ]
 
-export const TitlesNetworkIRight: TitleType[] = [
+export const TitlesUsesTool: TitleType[] = [
     {
-        title: "",
+        title: "Como instalar Gns3",
         description: ""
     }
 ]
