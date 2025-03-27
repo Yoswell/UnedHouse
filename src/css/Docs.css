@@ -1,8 +1,6 @@
 .menu-bar {
     position: sticky;
     top: 0;
-    min-width: 290px;
-    max-width: 290px;
     backdrop-filter: blur(70px);
     height: 100vh;
     
@@ -40,9 +38,8 @@
             gap: var(--g-10);
             cursor: pointer;
             padding: 8px 0;
-            padding-left: var(--p-15);
+            padding-left: var(--p-10);
             font-size: 14px;
-            white-space: nowrap;
 
             a {
                 overflow: hidden;
@@ -66,9 +63,19 @@
 /*********************************************************/
 /*********************************************************/
 
+.menu-bar-left {
+    min-width: 300px;
+    max-width: 3000px;
+}
+
+.menu-bar-right {
+    min-width: 270px;
+    max-width: 270px;
+}
+
 .menu-bar-left, .menu-bar-right { 
-    border-left: 1px solid var(--br-cl2);
-    border-right: 1px solid var(--br-cl2);
+    border-left: 2px solid var(--bg-cl1);
+    border-right: 2px solid var(--bg-cl1);
 }
 
 .menu-bar-right, .menu-bar-left {
